@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Guess The Word</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+    <!--1. Coloca etiquetas para agregar los nombres de los jugadores:-->
+    <h4 id="player1_name"></h4> <span id="player1_score"></span>
+
+    <h4 id="player2_name"></h4> <span id="player2_score"></span>
+
+    
+
+
+<div class="container">
+	<center>
+        <!-- Coloca el título de la segunda ventana: -->
+		
+        
+
+        <!-- Coloca el espacio para las etiquetas "player_question" y "player_answer" -->
+		<h3 id="player_question"></h3>
+        <h3 id="player_answer"></h3>
+
+
+
+		<div id="output" class="col-lg-6"> </div>
+		<br>
+		<br>
+
+        <!-- Utiliza la etiqueta label para indicarle al usuario que coloque la palabra a adivinar:-->
+        <label for=""> Escribe la palabra secreta, coloca al menos 5 letras: </label>
+
+
+        <!-- Coloca una etiqueta input para que el usuario ingrese la palabra -->
+        <input type="text" id="word" class="form-control" placeholder="escribe la palabra">
+
+
+        <!-- Coloca un botón para enviar la palabra secreta:-->
+		<button id="botonenviar" onclick="send()"> Enviar </button>
+
+
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
